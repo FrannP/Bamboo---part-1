@@ -1,0 +1,71 @@
+@use "../abstracts/" as ab;
+
+.card-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 108px;
+
+    &__title{
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+
+    }
+}
+
+.card{
+    background-color: ab.$gray;
+
+    width: 30vw;
+    justify-content: center;
+    align-items: center;
+
+    padding: 32px;
+    color: ab.$white;
+}
+
+.card-header{
+    display: flex;
+    align-items: center;
+
+    &__title{
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__subtitle{
+        font-size: 24px;
+        font-style: italic;
+        font-weight: 300;
+    }
+
+    &__image{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        align-content: center;
+        background-color: ab.$green;
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+    
+        margin-right:32px;
+    }
+}
+
+.card-paragraph{
+    margin-top: 17px ;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: row;
+    margin-top: 86px;
+    gap: 24px;
+}

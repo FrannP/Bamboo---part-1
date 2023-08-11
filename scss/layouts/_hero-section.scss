@@ -1,0 +1,52 @@
+@use "../abstracts/variables" as ab;
+
+.hero-section{
+    position: relative;
+}
+
+.hero-background-image{
+    position: relative;
+    object-fit:cover;
+    top: 0;
+    width: 100%;
+    height: 640px;
+}
+
+
+
+.hero-card{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+
+    color: ab.$white;
+
+    position: absolute;
+    left: 228px;
+    top: 206px;
+    padding-left: 32px;
+
+    background-color: ab.$green;
+    width: 595px;
+}
+
+
+
+.hero-text{
+    background-color: ab.$gray;
+    padding: 32px 24px 32px 24px;
+
+    &__title{
+        font-size: 48px;
+        font-weight: 600;
+    }
+    &__paragraph{
+        font-size: 18px;
+        font-weight: 400;
+
+        margin-top: 10px;
+    }
+}

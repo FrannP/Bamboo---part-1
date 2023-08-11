@@ -1,0 +1,92 @@
+@use "../abstracts/" as ab;
+
+.learn-section{
+    padding: 64px 108px;
+    background-color: ab.$gray;
+
+    color: ab.$white;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title{
+        text-align: center;
+        font-size: 48px;
+        font-weight: 700;
+    }
+}
+
+.learn-subsection{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    // gap: 168px;
+    gap: 5vw;
+
+    &__title{
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    margin: 120px 0;
+    &__image{
+        
+        width: 664px;
+        height: 480px;
+        object-fit:cover
+        
+    }
+
+    &__image--green-right{
+        padding-right: 32px;
+        background-color: ab.$green;
+    }
+
+    &__image--green-left{
+        padding-left: 32px;
+        background-color: ab.$green;
+    }
+
+    &__paragraph{
+        margin: 12px 0;
+        box-sizing: border-box;
+        font-size: 0.97rem; 
+        font-weight: 400;
+    }
+}
+
+.subsection-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.learn-section__button{
+    cursor: pointer;
+    background-color: ab.$green;
+    color: ab.$gray;
+    padding: 25px;
+    border-radius: 12px;
+
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: ease-in-out 0.3s;
+
+
+    &:hover{
+        transition: ease-in-out 0.1s;
+
+        background-color: ab.$gray;
+        color: ab.$green;
+        border: 4px solid ab.$green;
+    }
+}
+
+
+
+
