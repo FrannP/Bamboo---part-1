@@ -21,13 +21,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
 
-    // gap: 168px;
     gap: 5vw;
-
-    &__title{
-        font-size: 36px;
-        font-weight: 600;
-    }
 
     margin: 120px 0;
     &__image{
@@ -68,23 +62,14 @@
     cursor: pointer;
     background-color: ab.$green;
     color: ab.$gray;
-    padding: 25px;
+    padding: 25px 43px;
     border-radius: 12px;
 
     text-align: center;
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
-    transition: ease-in-out 0.3s;
 
-
-    &:hover{
-        transition: ease-in-out 0.1s;
-
-        background-color: ab.$gray;
-        color: ab.$green;
-        border: 4px solid ab.$green;
-    }
 }
 
 

@@ -23,6 +23,28 @@ h1, h2, h3, h4, h5, h6 {
   cursor: default;
 }
 
+button, input[type=submit], input[type=reset] {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+
+input[type=text], input[type=password], textarea {
+  border: none;
+  outline: none;
+}
+
+::placeholder {
+  color: #333333;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -39,17 +61,6 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: row;
   gap: 24px;
-}
-
-.logo {
-  background-color: #FFFFFF;
-}
-.logo__text {
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 1.25px;
-  position: relative;
-  top: 11px;
 }
 
 .menu__item {
@@ -98,10 +109,6 @@ h1, h2, h3, h4, h5, h6 {
 .hero-text {
   background-color: #333333;
   padding: 32px 24px 32px 24px;
-}
-.hero-text__title {
-  font-size: 48px;
-  font-weight: 600;
 }
 .hero-text__paragraph {
   font-size: 18px;
@@ -190,10 +197,6 @@ h1, h2, h3, h4, h5, h6 {
   gap: 5vw;
   margin: 120px 0;
 }
-.learn-subsection__title {
-  font-size: 36px;
-  font-weight: 600;
-}
 .learn-subsection__image {
   width: 664px;
   height: 480px;
@@ -225,19 +228,153 @@ h1, h2, h3, h4, h5, h6 {
   cursor: pointer;
   background-color: #87DE87;
   color: #333333;
-  padding: 25px;
+  padding: 25px 43px;
   border-radius: 12px;
   text-align: center;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
-  transition: ease-in-out 0.3s;
 }
-.learn-section__button:hover {
-  transition: ease-in-out 0.1s;
+
+.form-section {
+  padding: 120px 108px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  color: #333333;
+}
+
+.form-section__title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.form-section__paragraph {
+  color: #333;
+  font-size: 24px;
+  font-weight: 500;
+  width: 50%;
+  padding: 24px 0 48px 0;
+}
+
+.section-form {
+  display: flex;
+  justify-content: space-between;
+  width: 696px;
+  height: 64px;
+  border-radius: 12px;
+  border: 1px solid #FEFEFE;
+  background: #FEFEFE;
+  box-shadow: 0px 0px 8px 0px #333333;
+  padding: 8px;
+}
+
+.section-form__input {
+  width: 100%;
+  padding-left: 8px;
+}
+
+.section-form__button {
+  border-radius: 12px;
+  background: #87DE87;
+  width: 120px;
+}
+
+.footer {
+  background-color: #87DE87;
+  padding: 48px 108px 0 108px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 23px 0;
+  align-content: center;
+}
+.footer-content__list {
+  gap: 10px;
+}
+
+.footer-content__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333333;
+}
+.footer-content__title--big {
+  font-size: 24px;
+}
+.footer-content__title--black {
+  color: #000;
+}
+
+.footer-license {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   background-color: #333333;
-  color: #87DE87;
-  border: 4px solid #87DE87;
+  color: #FFFFFF;
+  padding: 0 108px;
+  height: 48px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-license-right {
+  display: flex;
+  flex-direction: row;
+  gap: 36px;
+}
+
+.footer-content__list {
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.footer-content__list--row {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.socialmedia-badge {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.logo {
+  background-color: #FFFFFF;
+  width: 120px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+}
+.logo__text {
+  font-size: 1.75rem;
+  font-weight: 600;
+  letter-spacing: 1.25px;
+  color: #333333;
+  position: relative;
+  top: 13px;
+}
+
+.section-title {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.section-subtitle {
+  font-size: 36px;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */

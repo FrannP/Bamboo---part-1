@@ -1,0 +1,53 @@
+@use "../abstracts/" as ab;
+
+.form-section{
+    padding:  120px 108px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+
+    color: ab.$gray;
+}
+
+.form-section__title{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.form-section__paragraph{
+    color: #333;
+    font-size: 24px;
+    font-weight: 500;
+    width: 50%;
+    padding: 24px 0 48px 0;
+}
+
+.section-form{
+    display: flex;
+    justify-content: space-between;
+    width: 696px;
+    height: 64px;
+
+    border-radius: 12px;
+    border: 1px solid #FEFEFE;
+    background: #FEFEFE;
+    box-shadow: 0px 0px 8px 0px ab.$gray;
+    padding: 8px;
+}
+
+.section-form__input{
+    width: 100%;
+    padding-left: 8px;
+}
+
+.section-form__button{
+    border-radius: 12px;
+    background: #87DE87;
+    width: 120px;
+}
+
+

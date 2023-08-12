@@ -1,5 +1,6 @@
 @use "../abstracts/" as ab;
 
+
 .header{
     display: flex;
     flex-direction: row;
@@ -22,20 +23,6 @@
     
 }
 
-.logo{
-    background-color: ab.$white;
-    &__text{
-        font-size: 1.5rem;
-        font-weight: 600;
-        letter-spacing: 1.25px;
-    
-
-    
-        position: relative;
-        top: 11px;
-    }
-
-}
 
 .menu__item{
     display: flex;
