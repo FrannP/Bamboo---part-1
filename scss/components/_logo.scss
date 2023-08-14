@@ -1,20 +1,50 @@
 @use "../abstracts/" as ab;
 
 
+// .logo{
+//     background-color: ab.$white;
+//     width: 120px;
+//     height: 30px;
+//     display: flex;
+//     justify-content: center;
+//     &__text{
+//         font-size: 1.75rem;
+//         font-weight: 600;
+//         letter-spacing: 1.25px;
+//         color: ab.$gray;
+//         position: relative;
+//         top: 13px;
+//     }
+
+
+// }
+
+
 .logo{
     background-color: ab.$white;
-    width: 120px;
-    height: 30px;
+    width: auto;
+    height: 42px;
     display: flex;
     justify-content: center;
+
+    &--background-large{
+        height: 78px;
+    }
+
     &__text{
         font-size: 1.75rem;
         font-weight: 600;
         letter-spacing: 1.25px;
         color: ab.$gray;
         position: relative;
-        top: 13px;
+        top: 20px;
+
+        &--large{
+            top: 42px;
+            font-size: 3rem;
+        }
     }
+
 
 
 }
