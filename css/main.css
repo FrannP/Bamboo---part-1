@@ -73,7 +73,7 @@ input[type=text], input[type=password], textarea {
 .menu__item--white-background {
   padding: 11px;
   background-color: #FFFFFF;
-  box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2509803922);
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
@@ -137,6 +137,7 @@ input[type=text], input[type=password], textarea {
   align-items: center;
   padding: 32px;
   color: #FFFFFF;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2509803922);
 }
 
 .card-header {
@@ -193,7 +194,7 @@ input[type=text], input[type=password], textarea {
 }
 
 .learn-subsection {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 5vw;
   margin: 120px 0;
@@ -255,7 +256,6 @@ input[type=text], input[type=password], textarea {
 }
 
 .form-section__paragraph {
-  color: #333;
   font-size: 24px;
   font-weight: 500;
   width: 50%;
@@ -268,9 +268,7 @@ input[type=text], input[type=password], textarea {
   width: 696px;
   height: 64px;
   border-radius: 12px;
-  border: 1px solid #FEFEFE;
-  background: #FEFEFE;
-  box-shadow: 0px 0px 8px 0px #333333;
+  box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.2509803922);
   padding: 8px;
 }
 
@@ -283,6 +281,7 @@ input[type=text], input[type=password], textarea {
   border-radius: 12px;
   background: #87DE87;
   width: 120px;
+  font-weight: 700;
 }
 
 .footer {
@@ -294,7 +293,7 @@ input[type=text], input[type=password], textarea {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 23px 0;
+  padding: 24px 0 96px 0;
   align-content: center;
 }
 .footer-content__list {
@@ -326,7 +325,7 @@ input[type=text], input[type=password], textarea {
   font-weight: 400;
 }
 
-.footer-license-right {
+.footer-license-privacy {
   display: flex;
   flex-direction: row;
   gap: 36px;

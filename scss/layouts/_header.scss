@@ -36,7 +36,7 @@
     &--white-background{
         padding: 11px;
         background-color: ab.$white;
-        box-shadow: 0px 0px 6px 0px #00000040;
+        @include ab.shadow;
 
        font-size: 18px;
         font-weight: 700;

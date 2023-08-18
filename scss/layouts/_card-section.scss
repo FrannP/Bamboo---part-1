@@ -25,6 +25,7 @@
 
     padding: 32px;
     color: ab.$white;
+    @include ab.shadow
 }
 
 .card-header{

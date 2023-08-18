@@ -18,7 +18,7 @@
 }
 
 .learn-subsection{
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr;
 
     gap: 5vw;
@@ -47,6 +47,7 @@
         box-sizing: border-box;
         font-size: 0.97rem; 
         font-weight: 400;
+        
     }
 }
 
