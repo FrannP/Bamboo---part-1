@@ -36,14 +36,15 @@
 
 
 .hero-text{
+    display: flex;
+    flex-direction: column;
     background-color: ab.$gray;
     padding: 32px 24px 32px 24px;
-
+    gap: 10px;
 
     &__paragraph{
         font-size: 18px;
         font-weight: 400;
 
-        margin-top: 10px;
     }
 }

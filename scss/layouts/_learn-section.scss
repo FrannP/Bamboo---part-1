@@ -1,6 +1,9 @@
 @use "../abstracts/" as ab;
 
 .learn-section{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
     padding: 64px 108px;
     background-color: ab.$gray;
 
@@ -19,11 +22,9 @@
 
 .learn-subsection{
     display: flex;
-    grid-template-columns: 1fr 1fr;
 
     gap: 5vw;
 
-    margin: 120px 0;
     &__image{
         
         width: 664px;

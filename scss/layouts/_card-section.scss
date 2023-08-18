@@ -6,6 +6,7 @@
     justify-content: center;
     align-items: center;
     padding: 108px;
+    gap:86px;
 
     &__title{
         text-align: center;
@@ -31,6 +32,7 @@
 .card-header{
     display: flex;
     align-items: center;
+    
 
     &__title{
         font-size: 24px;
@@ -69,6 +71,5 @@
 .card-wrapper{
     display: flex;
     flex-direction: row;
-    margin-top: 86px;
     gap: 24px;
 }
