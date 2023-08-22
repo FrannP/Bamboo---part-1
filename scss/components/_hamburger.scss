@@ -1,0 +1,58 @@
+@use "../abstracts/" as ab;
+
+.hamburger {
+    flex-direction: column;
+    gap:5px;
+    visibility: visible;
+
+    justify-content: center;
+    align-items: center;
+
+    width: 32px;
+    max-height: 32px;
+
+    padding: 20px;
+
+    background-color: ab.$white;
+
+    z-index: 999;
+
+    display: none;
+
+    &:hover{
+        cursor: pointer;
+    }
+
+    @include ab.max-breakpoint(ab.$breakpoint--small){
+        display: flex;
+        position: fixed;
+
+        right: 108px;
+    };
+  }
+
+.hamburger__line {
+    padding: 2px 15px;
+
+    background-color: ab.$gray;
+
+    transition: ease-in-out 0.5s;
+  }
+
+
+
+
+
+  .hamburger.hamburger__line--translate .hamburger__line:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+    transition: ease-in-out 0.5s;
+  }
+
+  .hamburger.hamburger__line--translate .hamburger__line:nth-child(2) {
+    transition: ease-in-out 0.5s;
+    opacity: 0%;
+  }
+  .hamburger.hamburger__line--translate .hamburger__line:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+    transition: ease-in-out 0.5s;
+  }

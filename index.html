@@ -7,16 +7,44 @@
     <link rel="stylesheet" href="./css/vendors/glide.core.css">
     <link rel="stylesheet" href="css\vendors\glide.theme.css.map">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src="./js/main.js" defer></script>
     <script src="https://kit.fontawesome.com/7b9c7e4d8b.js" crossorigin="anonymous"></script>
 
     <title>Bamboo - Part 1</title>
 </head>
 <body>
-    
-  
 
+    <ul class="drop-menu">
+        <il>
+          <a href="">
+            <h3>About</h3>
+          </a>
+        </il>
+        <il>
+          <a href="">
+            <h3>Pricing</h3>
+          </a>
+        </il>
+        <il>
+          <a href="">
+            <h3>Testimonials</h3>
+          </a>
+        </il>
+        <il>
+            <a href="">
+              <h3>Blog</h3>
+            </a>
+          </il>
+          <il>
+            <a href="">
+                <h3>Contact</h3>
+            </a>
+          </il>
+      </ul>
 
         <header class="header">
+           
+
             <div class="logo">
                 <a href="" class="logo__text logo__text--offset">
                     PanDoo
@@ -31,7 +59,17 @@
                 <li class="menu__item"><a href="">Contact</a></li>
                 <li class="menu__item menu__item--white-background"><a href="">GET IT NOW</a></li>
             </ul>
+
+            <div class="hamburger">
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+                <div class="hamburger__line"></div>
+              </div>
         </header>
+
+
+      
+        
 
         <section class="hero-section">
                 <img class="hero-background-image" src="imgs/329fb0b67aa19132b4709d657007dd47.jpg" alt="">
@@ -51,6 +89,8 @@
                         </div>
                     </div>
         </section>
+
+    
 
         <section class="card-section">
 
@@ -332,8 +372,18 @@
                 type: 'carousel',
                 perView: 3.5,
                 focusAt: 'center',
-                gap: 100,
-            }
+
+                breakpoints: {
+                    1920: {
+                    gap: 100,
+                },
+                    1720: {
+                    gap: 300,
+                },
+                }
+                }
+
+
             new Glide('.glide', config).mount()
         </script>
 </body>

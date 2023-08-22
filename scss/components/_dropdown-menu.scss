@@ -1,0 +1,30 @@
+@use "../abstracts/" as ab;
+
+.drop-menu   {
+    height: 100%;
+    width: 100%;
+  
+    background-color: ab.$white;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 32px;
+
+    padding: 108px;
+
+    font-size: 24px;
+    font-weight: 600;
+    color: ab.$black;
+  
+    transition: ease-in-out 0.5s;
+    transform: translateY(-100%);
+  }
+
+  .drop-menu.drop-menu--dropped {
+    transform: translateY(0%);
+    
+  }
