@@ -1,0 +1,45 @@
+@use "../abstracts/" as ab;
+
+.glide__image{
+    width: 552px;
+height: 321px;
+flex-shrink: 0;
+}
+
+
+.carousel-section{
+
+
+    padding-top: 262px;
+        
+}
+
+
+.glide{
+    position: relative;
+}
+
+
+.glide__arrows{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+    position: absolute;
+
+    bottom: 110px;
+    padding: 0 132px;
+}
+
+
+
+.glide__arrow--round{
+
+    background-color: ab.$green;
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+    @include ab.shadow;
+    border-radius: 50%;
+}
