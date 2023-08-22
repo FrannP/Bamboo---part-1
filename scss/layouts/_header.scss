@@ -21,7 +21,7 @@
     gap: 24px;
 
 
-    @include ab.max-breakpoint(ab.$breakpoint--large){
+    @include ab.max-breakpoint(ab.$breakpoint--small){
         display: none;
     };
 }
