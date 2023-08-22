@@ -23,7 +23,7 @@
         cursor: pointer;
     }
 
-    @include ab.max-breakpoint(ab.$breakpoint--small){
+    @include ab.max-breakpoint(ab.$breakpoint--medium){
         display: flex;
         position: fixed;
 

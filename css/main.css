@@ -63,7 +63,7 @@ input[type=text], input[type=password], textarea {
   flex-direction: row;
   gap: 24px;
 }
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 992px) {
   .menu {
     display: none;
   }
@@ -455,7 +455,7 @@ input[type=text], input[type=password], textarea {
 .hamburger:hover {
   cursor: pointer;
 }
-@media only screen and (max-width: 668px) {
+@media only screen and (max-width: 992px) {
   .hamburger {
     display: flex;
     position: fixed;
