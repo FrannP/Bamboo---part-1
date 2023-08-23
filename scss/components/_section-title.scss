@@ -2,25 +2,17 @@
 
 
 .section-title{
-    font-size: 48px;
-    font-weight: 700;
+    @include ab.title(ab.$breakpoint--medium)
 }
 
-@include ab.max-breakpoint(ab.$breakpoint--medium){
+.card-section__title{
+    @include ab.title(ab.$breakpoint--medium)
+} 
 
-    .section-title--small {    
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        color: ab.$gray;
-    }
-
-    .learn-section__title--small {    
-        text-align: center;
-        font-size: 36px;
-        font-weight: 700;
-        color: ab.$white;
-    }
-
+.learn-section__title{
+    @include ab.title(ab.$breakpoint--medium)
 }
 
+.form-section__title{
+    @include ab.title(ab.$breakpoint--medium)
+}

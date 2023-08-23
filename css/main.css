@@ -131,7 +131,14 @@ input[type=text], input[type=password], textarea {
 
 .hero-text__title {
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 700;
+}
+@media only screen and (max-width: 992px) {
+  .hero-text__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+  }
 }
 
 .hero-text {
@@ -189,9 +196,7 @@ input[type=text], input[type=password], textarea {
   gap: 86px;
 }
 .card-section__title {
-  text-align: center;
-  font-size: 48px;
-  font-weight: 700;
+  color: #333333;
 }
 
 .card {
@@ -334,7 +339,14 @@ input[type=text], input[type=password], textarea {
 }
 .learn-subsection__title {
   font-size: 36px;
-  font-weight: 600;
+  font-weight: 700;
+}
+@media only screen and (max-width: 992px) {
+  .learn-subsection__title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+  }
 }
 
 .learn-subsection-text {
@@ -385,9 +397,6 @@ input[type=text], input[type=password], textarea {
     width: 100%;
   }
   .learn-subsection__title {
-    text-align: center;
-    font-size: 24px;
-    font-weight: 600;
     padding: 0 0 28px 0;
   }
   .learn-subsection__image--green-right {
@@ -455,12 +464,15 @@ input[type=text], input[type=password], textarea {
 
 @media only screen and (max-width: 992px) {
   .form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     padding: 48px 31px;
   }
   .form-section__paragraph {
     width: 100%;
     text-align: center;
-    padding: 24px 0;
+    padding: 0px 0;
     font-size: 16px;
     font-weight: 500;
   }
@@ -618,21 +630,50 @@ input[type=text], input[type=password], textarea {
   font-size: 48px;
   font-weight: 700;
 }
-
 @media only screen and (max-width: 992px) {
-  .section-title--small {
+  .section-title {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    color: #333333;
-  }
-  .learn-section__title--small {
-    text-align: center;
-    font-size: 36px;
-    font-weight: 700;
-    color: #FFFFFF;
   }
 }
+
+.card-section__title {
+  font-size: 48px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 992px) {
+  .card-section__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+
+.learn-section__title {
+  font-size: 48px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 992px) {
+  .learn-section__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+
+.form-section__title {
+  font-size: 48px;
+  font-weight: 700;
+}
+@media only screen and (max-width: 992px) {
+  .form-section__title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+  }
+}
+
 .glide__slide {
   display: flex;
   justify-content: center;
@@ -700,10 +741,16 @@ input[type=text], input[type=password], textarea {
   .carousel-section__title {
     visibility: visible;
     padding: 47px 0;
+    font-size: 48px;
+    font-weight: 700;
+    color: #333333;
+  }
+}
+@media only screen and (max-width: 992px) and (max-width: 992px) {
+  .carousel-section__title {
     text-align: center;
     font-size: 36px;
     font-weight: 700;
-    color: #333333;
   }
 }
 .hamburger {
@@ -772,7 +819,7 @@ input[type=text], input[type=password], textarea {
   font-weight: 600;
   color: #000;
   transition: ease-in-out 0.5s;
-  transform: translateY(-100%);
+  transform: translateY(-200%);
 }
 .drop-menu__nav {
   gap: 32px;

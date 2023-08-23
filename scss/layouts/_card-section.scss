@@ -9,9 +9,7 @@
     gap:86px;
 
     &__title{
-        text-align: center;
-        font-size: 48px;
-        font-weight: 700;
+        color: ab.$gray;
 
     }
 }
@@ -61,8 +59,6 @@
 
 .card-paragraph{
     margin-top: 17px ;
-
-    // font-size: 18px;
     font-size: 0.95rem;
     font-weight: 400;
 }

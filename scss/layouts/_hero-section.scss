@@ -47,8 +47,7 @@
 }
 
 .hero-text__title{
-    font-size: 48px;
-    font-weight: 600;
+    @include ab.title(ab.$breakpoint--medium)
 }
 
 .hero-text{
