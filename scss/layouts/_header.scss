@@ -22,9 +22,6 @@
 
     align-items: center;
 
-    @include ab.max-breakpoint(ab.$breakpoint--medium){
-        display: none;
-    };
 }
 
 
@@ -48,3 +45,22 @@
 
     }
 }
+
+@include ab.max-breakpoint(ab.$breakpoint--medium){
+    .header{
+        padding: 0 32px;
+    }
+
+    .menu{
+        display: none;
+    }
+
+
+    .menu__item{
+        &--white-background{
+
+            @include ab.shadow;
+        }
+    }
+
+};

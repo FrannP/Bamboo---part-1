@@ -20,6 +20,14 @@
     }
 }
 
+
+.subsection-image-wrapper{
+    width: 100%;
+}
+.learn-section{
+    padding: 64px 0px;
+}
+
 .learn-subsection{
     display: flex;
 
@@ -29,18 +37,24 @@
         
         width: 664px;
         height: 480px;
-        object-fit:cover
+        object-fit:cover;
+
+
         
     }
 
     &__image--green-right{
         padding-right: 32px;
         background-color: ab.$green;
+
+
     }
 
     &__image--green-left{
         padding-left: 32px;
         background-color: ab.$green;
+
+
     }
 
     &__paragraph{
@@ -77,6 +91,68 @@
     font-size: 18px;
     font-weight: 700;
     text-transform: uppercase;
+
+}
+
+@include ab.max-breakpoint(ab.$breakpoint--medium){
+
+    .learn-section__title--small {    
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: ab.$white;
+    }
+
+    .learn-subsection-text{
+        font-size: 18px;
+        font-weight: 400;
+        padding: 0px 31px;
+    }
+
+    .learn-section{
+        gap: 29px;
+        padding: 36px 0;
+    }
+
+
+    .learn-section__button{
+        display: none;
+    }
+
+    .learn-subsection{
+        &__image{
+            height: 360px;
+            width: 100%;
+        }
+
+        &__title{
+            text-align: center;
+            font-size: 24px;
+            font-weight: 600;
+
+        }
+
+        flex-direction: column;
+
+        &__image--green-right{
+        padding-right: 0px;
+        padding-bottom: 32px;
+        }
+
+        &--reverse{
+            display: flex;
+            flex-direction: column-reverse;
+        }
+
+        &__image--green-left{
+                padding-bottom: 32px;
+                padding-left: 0;
+        }
+    }
+
+
+    
+
 
 }
 

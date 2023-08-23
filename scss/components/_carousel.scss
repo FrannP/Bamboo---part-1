@@ -1,23 +1,30 @@
 @use "../abstracts/" as ab;
 
+.glide__slide{
+    display: flex;
+    justify-content: center;
+}
+
 .glide__image{
     width: 552px;
-height: 321px;
-flex-shrink: 0;
+    height: 321px;
+
 }
 
 
 .carousel-section{
+    &__title{
+        visibility: hidden;
+        padding: 47px 0;
 
-
-    padding-top: 262px;
-        
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+    }
 }
 
 
-.glide{
-    position: relative;
-}
+
 
 
 .glide__arrows{
@@ -34,7 +41,11 @@ flex-shrink: 0;
 
 
 
-.glide__arrow--round{
+.glide__arrow--green-big{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     background-color: ab.$green;
     width: 100px;
@@ -43,3 +54,51 @@ flex-shrink: 0;
     @include ab.shadow;
     border-radius: 50%;
 }
+
+
+
+
+
+
+@include ab.max-breakpoint(ab.$breakpoint--medium){
+
+    .glide__image{
+        width: 312px;
+        height: 321px
+    }
+
+    
+    .glide__arrows{
+        padding: 0 32px;
+    }
+
+    .glide__arrow--white-small{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: ab.$white;
+        width: 32px;
+        height: 32px;
+        flex-shrink: 0;
+        @include ab.shadow;
+        border-radius: 50%;
+    }
+
+    .glide__arrow-svg--small{
+        width:16px; 
+        height: 16px;
+    }
+
+    
+.carousel-section{
+    &__title{
+        visibility:visible;
+        padding: 47px 0;
+
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: ab.$gray
+    }
+}
+};

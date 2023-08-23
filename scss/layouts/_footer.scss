@@ -58,7 +58,7 @@
 .footer-content__list{
     display: flex;
     flex-direction: column;
-    padding-top: 10px;
+    padding-top: 18px;
 }
 
 .footer-content__list--row{
@@ -76,8 +76,59 @@
     align-items: center;
     background-color:ab.$gray;
     border-radius: 50%;
+    width: 48px;
+    height: 48px;
 }
 
 .footer-logo{
     display: flex;
 }
+
+@include ab.max-breakpoint(ab.$breakpoint--medium){
+    .footer{
+        padding: 0  108px 0 108px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 48px;
+        gap: 64px;
+    }
+
+    .footer-logo{
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-content{
+    
+        
+
+        &__list{
+            text-align: center;
+           justify-content: center;
+
+           
+        }
+
+
+       &__title{
+        text-align: center;
+        }
+    }
+
+
+
+    .footer-license{
+        display: flex;
+        flex-direction: column-reverse;
+        height: 86px;
+        padding: 16px 0px;
+    }
+
+    .footer-license-privacy{
+        gap:12px;
+    }
+}
+

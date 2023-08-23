@@ -2,6 +2,7 @@
 
 .hero-section{
     position: relative;
+
 }
 
 .hero-background-image{
@@ -10,6 +11,9 @@
     top: 0;
     width: 100%;
     height: 640px;
+
+
+
 }
 
 
@@ -31,6 +35,15 @@
 
     background-color: ab.$green;
     width: 595px;
+
+    @include ab.max-breakpoint(ab.$breakpoint--medium){
+        position: initial;
+        text-align: center;
+        padding-left: 0px;
+        padding-bottom: 49px;
+        width: 100%;
+
+    };
 }
 
 .hero-text__title{
@@ -49,5 +62,46 @@
         font-size: 18px;
         font-weight: 400;
 
+    }
+
+    @include ab.max-breakpoint(ab.$breakpoint--medium){
+        padding: 32px;
+        
+    };
+}
+
+@include ab.max-breakpoint(ab.$breakpoint--medium){
+
+    .hero-text__title--small{
+        color: #FEFEFE;
+        text-align: center;
+        font-family: Raleway;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+    }
+
+   .hero-section{
+        background-color: #333;
+        position: relative;
+    };
+
+    .hero-text{
+        padding: 32px;
+
+        &__paragraph{
+            font-size: 18px;
+            font-weight: 400;
+            text-align: start;
+        }
+    }
+
+    
+.hero-card{
+        position: initial;
+        padding-left: 0px;
+        padding-bottom: 49px;
+        width: 100%;
     }
 }

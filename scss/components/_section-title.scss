@@ -1,7 +1,26 @@
+@use "../abstracts/" as ab;
 
 
 .section-title{
     font-size: 48px;
     font-weight: 700;
+}
+
+@include ab.max-breakpoint(ab.$breakpoint--medium){
+
+    .section-title--small {    
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: ab.$gray;
+    }
+
+    .learn-section__title--small {    
+        text-align: center;
+        font-size: 36px;
+        font-weight: 700;
+        color: ab.$white;
+    }
+
 }
 
