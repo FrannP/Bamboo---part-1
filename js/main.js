@@ -3,6 +3,8 @@ const dropdownMenu = document.querySelector(".drop-menu");
 
 hamburgerButton.addEventListener("click", () => {
     dropdownMenu.classList.toggle("drop-menu--dropped");
-  hamburgerButton.classList.toggle("hamburger__line--translate");
+    hamburgerButton.classList.toggle("hamburger--clicked"); 
+
+
   console.log("yo")
 });

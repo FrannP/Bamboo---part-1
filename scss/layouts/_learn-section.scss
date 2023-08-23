@@ -50,9 +50,15 @@
         font-weight: 400;
         
     }
+
+    &__title{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    
 }
 
-.subsection-text{
+.learn-subsection-text{
     display: flex;
     flex-direction: column;
     justify-content: center;

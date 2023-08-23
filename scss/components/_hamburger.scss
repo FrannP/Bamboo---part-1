@@ -25,11 +25,14 @@
 
     @include ab.max-breakpoint(ab.$breakpoint--medium){
         display: flex;
-        position: fixed;
 
         right: 108px;
     };
   }
+
+
+
+  
 
 .hamburger__line {
     padding: 2px 15px;
@@ -39,20 +42,27 @@
     transition: ease-in-out 0.5s;
   }
 
+  .hamburger.hamburger--clicked{
+    @include ab.max-breakpoint(ab.$breakpoint--medium){
+      display: flex;
+      position: fixed;
+
+      right: 108px;
+    };
+  }
 
 
 
-
-  .hamburger.hamburger__line--translate .hamburger__line:nth-child(1) {
+  .hamburger.hamburger--clicked .hamburger__line:nth-child(1) {
     transform: translateY(9px) rotate(45deg);
     transition: ease-in-out 0.5s;
   }
 
-  .hamburger.hamburger__line--translate .hamburger__line:nth-child(2) {
+  .hamburger.hamburger--clicked .hamburger__line:nth-child(2) {
     transition: ease-in-out 0.5s;
     opacity: 0%;
   }
-  .hamburger.hamburger__line--translate .hamburger__line:nth-child(3) {
+  .hamburger.hamburger--clicked .hamburger__line:nth-child(3) {
     transform: translateY(-9px) rotate(-45deg);
     transition: ease-in-out 0.5s;
   }

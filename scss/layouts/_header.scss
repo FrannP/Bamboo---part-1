@@ -20,6 +20,7 @@
     flex-direction: row;
     gap: 24px;
 
+    align-items: center;
 
     @include ab.max-breakpoint(ab.$breakpoint--medium){
         display: none;
