@@ -376,7 +376,8 @@ input[type=text], input[type=password], textarea {
     display: none;
   }
   .learn-subsection {
-    padding: 0 0;
+    padding: 0px 0px;
+    gap: 29px;
     flex-direction: column;
   }
   .learn-subsection__image {
@@ -387,7 +388,7 @@ input[type=text], input[type=password], textarea {
     text-align: center;
     font-size: 24px;
     font-weight: 600;
-    padding: 28px 0;
+    padding: 0 0 28px 0;
   }
   .learn-subsection__image--green-right {
     padding-right: 0px;
@@ -459,8 +460,12 @@ input[type=text], input[type=password], textarea {
   .form-section__paragraph {
     width: 100%;
     text-align: center;
+    padding: 24px 0;
     font-size: 16px;
     font-weight: 500;
+  }
+  .section-form--small {
+    height: 48px;
   }
   .section-form {
     width: 100%;
@@ -468,6 +473,12 @@ input[type=text], input[type=password], textarea {
   }
   .section-form__input {
     border-radius: 12px;
+  }
+  .section-form ::placeholder {
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
   }
   .section-form__button {
     border-top-right-radius: 12px;
@@ -669,6 +680,7 @@ input[type=text], input[type=password], textarea {
   }
   .glide__arrows {
     padding: 0 32px;
+    bottom: 145px;
   }
   .glide__arrow--white-small {
     display: flex;

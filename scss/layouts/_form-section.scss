@@ -61,12 +61,14 @@
         &__paragraph{
             width: 100%;
             text-align: center;
-
+            padding: 24px 0;
             font-size: 16px;
             font-weight: 500;
         }
+    }
 
-
+    .section-form--small{
+        height: 48px;
     }
 
     .section-form{
@@ -76,6 +78,13 @@
 
         &__input{
             border-radius: 12px;
+        }
+
+        ::placeholder{
+            font-family: Raleway;
+            font-size: 16px;
+            font-style: italic;
+            font-weight: 400;
         }
 
         &__button{

@@ -126,7 +126,8 @@
     .learn-subsection{
 
         
-    padding: 0 0;
+    padding: 0px 0px;
+    gap: 29px;
         &__image{
             height: 360px;
             width: 100%;
@@ -136,8 +137,7 @@
             text-align: center;
             font-size: 24px;
             font-weight: 600;
-
-            padding: 28px 0;
+            padding: 0 0 28px 0;
 
         }
 

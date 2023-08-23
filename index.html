@@ -275,7 +275,7 @@
             <p class="form-section__paragraph">
                 You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts.
             </p>
-            <form class="section-form" action="">
+            <form class="section-form section-form--small" action="">
                 <input class="section-form__input" placeholder="example@email.com" type="text">
                 <button class="section-form__button">SEND</button>
             </form>
@@ -403,29 +403,44 @@
             const config = {
 
                 type: 'carousel',
-                perView: 3.5,
+
                 focusAt: 'center',
 
                 breakpoints: {
-                    1920: {
-                    gap: 100,
-                    focusAt: 'center',
-                },
-                    1720: {
-                    gap: 450,
-                    focusAt: 'center',
-                },
-                1024: {
-                    gap: 350,
-                    focusAt: 'center',
-                },
-                376: {
-                    perView: 1.25,
-                    gap: 35,
-                    focusAt: 'center',
-                },
+                    2561: {
+                        focusAt: 'center',
+                        perView: 3.5,
+                        type: 'carousel',
+                    },
+                    1441: {
+                        focusAt: 'center',
+                        perView: 3.5,
+                        gap: 500,
+                        type: 'carousel',
+                    },
+                    1025: {
+                        perView: 2.5,
+                        gap: 450,
+                        type: 'carousel',
+                    },
+                    769: {
+                        perView: 1.75,
+                        gap: 10,
+                        type: 'carousel',
+                    },
+                    376: {
+                        perView: 1.75,
+                        gap: 200,
+                        type: 'carousel',
+                    },
+                    321: {
+                        perView: 1.75,
+                        gap: 255,
+                        type: 'carousel',
+                    }
+
                 }
-                }
+            }
 
 
             new Glide('.glide', config).mount()
