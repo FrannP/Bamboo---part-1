@@ -49,6 +49,8 @@
 @include ab.max-breakpoint(ab.$breakpoint--medium){
     .header{
         padding: 0 32px;
+
+        height: 64px;
     }
 
     .menu{

@@ -84,6 +84,7 @@ input[type=text], input[type=password], textarea {
 @media only screen and (max-width: 992px) {
   .header {
     padding: 0 32px;
+    height: 64px;
   }
   .menu {
     display: none;
@@ -255,6 +256,7 @@ input[type=text], input[type=password], textarea {
   .card {
     position: relative;
     padding-top: 92px;
+    padding: 92px 16px 24px 16px;
   }
   .card-section {
     padding: 47px 31px;
@@ -309,6 +311,7 @@ input[type=text], input[type=password], textarea {
 .learn-subsection {
   display: flex;
   gap: 5vw;
+  padding: 0 108px;
 }
 .learn-subsection__image {
   width: 664px;
@@ -373,6 +376,7 @@ input[type=text], input[type=password], textarea {
     display: none;
   }
   .learn-subsection {
+    padding: 0 0;
     flex-direction: column;
   }
   .learn-subsection__image {
@@ -383,6 +387,7 @@ input[type=text], input[type=password], textarea {
     text-align: center;
     font-size: 24px;
     font-weight: 600;
+    padding: 28px 0;
   }
   .learn-subsection__image--green-right {
     padding-right: 0px;
