@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/vendors/glide.core.css">
-    <link rel="stylesheet" href="css\vendors\glide.theme.css.map">
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
     <script src="./js/main.js" defer></script>
     <script src="https://kit.fontawesome.com/7b9c7e4d8b.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="./css/main.css">
+
+    <link rel="stylesheet" href="./css/vendors/glide.core.css">
+    <link rel="stylesheet" href="css\vendors\glide.theme.css.map">
+
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Bamboo - Part 1</title>
 </head>
 <body>
@@ -90,7 +95,10 @@
 
         <section class="hero-section">
                 <img class="hero-background-image" src="imgs/329fb0b67aa19132b4709d657007dd47.jpg" alt="">
-                    <div class="hero-card">
+                    <div class="hero-card"
+                    data-aos="zoom-in-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="300">
                         <div class="hero-text">
                             <h1 class="hero-text__title">
                                 Hero Title
@@ -106,11 +114,18 @@
 
         <section class="card-section">
 
-            <h1 class="card-section__title">Section Title</h1>
+            <h1 class="card-section__title"             
+            data-aos="fade-up"
+            data-aos-duration="300">
+                Section Title
+            </h1>
 
             <div class="card-wrapper">
                 
-                <div class="card">
+                <div class="card"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="300">
                     <div class="card-header">
                         <div class="card-header__image card-header__image--displaced">
                             <img src="./imgs/world 1.svg" alt="">
@@ -127,7 +142,10 @@
                     </p>
                 </div>
 
-                <div class="card">
+                <div class="card"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="600">
                     <div class="card-header ">
                         <div class="card-header__image card-header__image--displaced">
                             <img src="./imgs/solar 1.svg" alt="">
@@ -144,7 +162,10 @@
                     </p>
                 </div>
 
-                <div class="card">
+                <div class="card"
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="900">
                     <div class="card-header">
                         <div class="card-header__image card-header__image--displaced">
                             <img src="./imgs/wind 1.svg" alt="">
@@ -166,25 +187,48 @@
 
         <section class="learn-section">
 
-            <h1 class="learn-section__title">Section Title</h1>
+            <h1 class="learn-section__title"             
+            data-aos="fade-up"
+            data-aos-duration="300">
+                Section Title
+            </h1>
 
             <section class="learn-subsection learn-subsection--reverse">
-                <div class="learn-subsection-text">
-                    <h1 class="learn-subsection__title">Subsection Title</h1>
-                    <p class="learn-subsection__paragraph">
+                <div class="learn-subsection-text"
+>
+                    <h1 class="learn-subsection__title"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="300">
+                        Subsection Title
+                    </h1>
+
+                    <p class="learn-subsection__paragraph"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="600">
                         You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to you! I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers. By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society.
                     </p>
 
-                    <p class="learn-subsection__paragraph">
+                    <p class="learn-subsection__paragraph"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="750">
                         Are you suggesting coconuts migrate? The Lady of the Lake, her arm clad in the purest shimmering samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. THAT is why I am your king. Come and see the violence inherent in the system. Help! Help! I'm being repressed! I'm Brian, and so's my wife! I don't want to talk to you no more, you empty-headed animal food trough wiper! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries!
                     </p>
 
-                    <p class="learn-subsection__paragraph">
+                    <p class="learn-subsection__paragraph"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="900">
                         What is the capital of Assyria? Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.
                     </p>
                 </div>
 
-                <div class="subsection-image-wrapper">
+                <div class="subsection-image-wrapper"                     
+                data-aos="fade-up"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="300">
                     <img class="learn-subsection__image learn-subsection__image--green-right" src="./imgs/931d066e479d760ce9f17096bb9d6cc9.jpg" alt="">
                 </div>
             </section>
@@ -192,33 +236,59 @@
 
             <section class="learn-subsection">
                 <div class="subsection-image-wrapper">
-                    <img class="learn-subsection__image learn-subsection__image--green-left" src=".\imgs\15fd654b3a3418a8a45c43387d376a19.jpg" alt="">
+                    <img                 
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="300" 
+                    class="learn-subsection__image learn-subsection__image--green-left" src=".\imgs\15fd654b3a3418a8a45c43387d376a19.jpg" alt="">
                 </div>
 
                 <div class="learn-subsection-text">
-                    <h1 class="learn-subsection__title">Subsection Title</h1>
-                    <p class="learn-subsection__paragraph">
+                    <h1 class="learn-subsection__title"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="300">
+                        Subsection Title
+                    </h1>
+                    <p class="learn-subsection__paragraph"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="600">
                         You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts. Oh, oh, I see! Running away, eh? You yellow bastards! Come back here and take what's coming to you! I'll bite your legs off! Oh, king eh? Very nice. And how'd you get that, eh? By exploiting the workers. By hanging on to outdated imperialist dogma which perpetuates the economic and social differences in our society.
                     </p>
 
-                    <p class="learn-subsection__paragraph">
+                    <p class="learn-subsection__paragraph"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="750">
                         Are you suggesting coconuts migrate? The Lady of the Lake, her arm clad in the purest shimmering samite held aloft Excalibur from the bosom of the water, signifying by divine providence that I, Arthur, was to carry Excalibur. THAT is why I am your king. Come and see the violence inherent in the system. Help! Help! I'm being repressed! I'm Brian, and so's my wife! I don't want to talk to you no more, you empty-headed animal food trough wiper! I fart in your general direction! Your mother was a hamster and your father smelt of elderberries!
                     </p>
 
-                    <p class="learn-subsection__paragraph">
+                    <p class="learn-subsection__paragraph"
+                    data-aos="fade-up"
+                    data-aos-anchor-placement="center-bottom"
+                    data-aos-duration="900">
                         What is the capital of Assyria? Listen, strange women lyin' in ponds distributin' swords is no basis for a system of government. Supreme executive power derives from a mandate from the masses, not from some farcical aquatic ceremony.
                     </p>
                 </div>
             </section>
 
-            <button class="learn-section__button">
+            <button class="learn-section__button"
+            data-aos="zoom-in-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-duration="600">
                 LEARN MORE
             </button>
         </section>
 
-        <section class="carousel-section">
+        <section class="carousel-section"
+        >
 
-            <h1 class="carousel-section__title">Section Title</h1>
+            <h1 class="carousel-section__title"             
+            data-aos="fade-up"
+            data-aos-duration="300">
+                Section Title
+            </h1>
             
             <div class="glide">
                 <div class="glide__track" data-glide-el="track">
@@ -235,14 +305,20 @@
                     </ul>
 
                     <div class="glide__arrows" data-glide-el="controls">
-                        <button class="glide__arrow glide__arrow--green-big glide__arrow--white-small glide__arrow--left" data-glide-dir="<">
+                        <button class="glide__arrow glide__arrow--green-big glide__arrow--white-small glide__arrow--left" data-glide-dir="<"
+                        data-aos="zoom-in-up"
+                        data-aos-anchor-placement="center-bottom"
+                        data-aos-duration="300">
                             <svg class="glide__arrow-svg glide__arrow-svg--small" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M0 32.0182C0 31.4842 0.219997 30.9742 0.585999 30.5902L20.384 10.5922C21.166 9.80224 22.432 9.80424 23.212 10.5922C23.994 11.3802 23.994 12.6602 23.212 13.4482L6.826 29.9982H62C63.104 29.9982 64 30.9022 64 32.0182C64 33.1342 63.104 34.0382 62 34.0382H6.828L23.212 50.5882C23.994 51.3762 23.992 52.6562 23.212 53.4442C22.43 54.2322 21.164 54.2322 20.384 53.4442L0.585999 33.4462C0.211998 33.0682 0.00600052 32.5482 0 32.0182Z" fill="#333333"/>
                             </svg>
                         </button>
 
 
-                        <button class="glide__arrow glide__arrow--green-big glide__arrow--white-small glide__arrow--right" data-glide-dir=">">
+                        <button class="glide__arrow glide__arrow--green-big glide__arrow--white-small glide__arrow--right" data-glide-dir=">"
+                            data-aos="zoom-in-up"
+                            data-aos-anchor-placement="center-bottom"
+                            data-aos-duration="900">
                             <svg class="glide__arrow-svg glide__arrow-svg--small" xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M64 32.0182C64 31.4842 63.78 30.9742 63.414 30.5902L43.616 10.5922C42.834 9.80224 41.568 9.80424 40.788 10.5922C40.006 11.3802 40.006 12.6602 40.788 13.4482L57.174 29.9982H2C0.896 29.9982 0 30.9022 0 32.0182C0 33.1342 0.896 34.0382 2 34.0382H57.172L40.788 50.5882C40.006 51.3762 40.008 52.6562 40.788 53.4442C41.57 54.2322 42.836 54.2322 43.616 53.4442L63.414 33.4462C63.788 33.0682 63.994 32.5482 64 32.0182Z" fill="#333333"/>
                             </svg>
@@ -257,18 +333,38 @@
         <section class="form-section">
 
 
-            <h1 class="form-section__title ">Section Title</h1>
-            <p class="form-section__paragraph">
+            <h1 class="form-section__title "
+            data-aos="fade-up"
+            data-aos-duration="300">
+                Section Title
+            </h1>
+
+            <p class="form-section__paragraph"
+            data-aos="fade-up"
+            data-aos-duration="1800">
                 You don't frighten us, English pig dogs. Go and boil your bottoms, you sons of a silly person. I blow my nose at you, so-called "Arthur King," you and all your silly English K-nig-hts.
             </p>
-            <form class="section-form section-form--small" action="">
-                <input class="section-form__input" placeholder="example@email.com" type="text">
-                <button class="section-form__button">SEND</button>
+            <form class="section-form section-form--small" action=""
+            data-aos="fade-up"
+            data-aos-duration="900">
+                <input class="section-form__input" placeholder="example@email.com" type="text"
+                data-aos="fade-right"
+                data-aos-anchor-placement="center-bottom"
+                data-aos-duration="2700">
+
+
+                <button class="section-form__button">
+                SEND
+            </button>
             </form>
         </section>
 
         <footer class="footer">
-            <div class="footer-logo">
+            <div class="footer-logo"
+            data-aos="fade-up"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="300">
+
                 <div class="logo logo--background-large">
                     <a href="" class="logo__text logo__text--large">
                         PanDoo
@@ -323,7 +419,10 @@
                     </h1>
                     <ul class="footer-content__list footer-content__list--row ">
 
-                        <a href="">
+                        <a href=""             
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="300">
 
                             <li class="socialmedia-badge">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -334,7 +433,10 @@
                         </a>
                         
 
-                        <a href="">
+                        <a href=""            
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="600">
 
                             <li  class="socialmedia-badge">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -345,7 +447,10 @@
                         </a>
                         
                         
-                        <a href="">
+                        <a href=""            
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="900">
                      
                             <li  class="socialmedia-badge">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -356,7 +461,10 @@
                         </a>
                         
                         
-                        <a href="">
+                        <a href=""            
+                        data-aos="fade-up"
+                        data-aos-anchor-placement="bottom-bottom"
+                        data-aos-duration="1200">
              
                             <li  class="socialmedia-badge">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
@@ -384,58 +492,56 @@
 
         </div>
 
+        <!-- Glide Slide -->
+
         <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
         <script>
             const config = {
 
                 type: 'carousel',
-
                 focusAt: 'center',
 
                 breakpoints: {
                     2561: {
-                        focusAt: 'center',
-                        perView: 4.5,
-                        type: 'carousel',
+                        perView: 4.25,
+                    },
+                    1921: {
+                        perView: 3.25,
                     },
                     1507: {
-                        focusAt: 'center',
-                        perView: 4,
-                        gap: 500,
-                        type: 'carousel',
+                        perView: 2.5,
                     },
                     1441: {
-                        focusAt: 'center',
-                        perView: 3.5,
-                        gap: 500,
-                        type: 'carousel',
+                        perView: 2.5,
                     },
                     1025: {
-                        perView: 2.5,
-                        gap: 450,
-                        type: 'carousel',
+                        perView: 1.75,
                     },
                     769: {
-                        perView: 1.75,
-                        gap: 10,
-                        type: 'carousel',
+                        perView: 2,
+                    },
+                    426: {
+                        perView: 1.25,
                     },
                     376: {
-                        perView: 1.75,
-                        gap: 200,
-                        type: 'carousel',
+                        perView: 1.15,
                     },
                     321: {
-                        perView: 1.75,
-                        gap: 255,
-                        type: 'carousel',
+                        perView: 1,
                     }
-
                 }
             }
 
-
+            
             new Glide('.glide', config).mount()
+        </script>
+
+
+        <!-- AOS -->
+
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init();
         </script>
 </body>
 </html>

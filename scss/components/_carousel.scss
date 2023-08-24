@@ -6,8 +6,10 @@
 }
 
 .glide__image{
+    position: relative;
     width: 552px;
     height: 321px;
+    object-fit:cover;
 
 }
 
