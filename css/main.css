@@ -480,7 +480,7 @@ input[type=text], input[type=password], textarea {
   padding: 24px 0 48px 0;
 }
 
-.section-form {
+.form {
   display: flex;
   justify-content: space-between;
   width: 696px;
@@ -490,13 +490,13 @@ input[type=text], input[type=password], textarea {
   padding: 8px;
 }
 
-.section-form__input {
+.form__input {
   width: 100%;
   padding-left: 8px;
   background-color: transparent;
 }
 
-.section-form__button {
+.form__button {
   border-radius: 12px;
   background: #87DE87;
   width: 120px;
@@ -521,23 +521,23 @@ input[type=text], input[type=password], textarea {
     font-size: 16px;
     font-weight: 500;
   }
-  .section-form--small {
+  .form--small {
     height: 48px;
   }
-  .section-form {
+  .form {
     width: 100%;
     padding: 0px;
   }
-  .section-form__input {
+  .form__input {
     border-radius: 12px;
   }
-  .section-form ::placeholder {
+  .form ::placeholder {
     font-family: Raleway;
     font-size: 16px;
     font-style: italic;
     font-weight: 400;
   }
-  .section-form__button {
+  .form__button {
     border-top-right-radius: 12px;
     border-bottom-right-radius: 12px;
     border-top-left-radius: 0;

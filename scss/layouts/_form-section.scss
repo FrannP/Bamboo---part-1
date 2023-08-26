@@ -25,7 +25,7 @@
     padding: 24px 0 48px 0;
 }
 
-.section-form{
+.form{
     display: flex;
     justify-content: space-between;
     width: 696px;
@@ -35,13 +35,13 @@
     padding: 8px;
 }
 
-.section-form__input{
+.form__input{
     width: 100%;
     padding-left: 8px;
     background-color: transparent;
 }
 
-.section-form__button{
+.form__button{
     border-radius: 12px;
     background: #87DE87;
     width: 120px;
@@ -71,11 +71,11 @@
         }
     }
 
-    .section-form--small{
+    .form--small{
         height: 48px;
     }
 
-    .section-form{
+    .form{
 
         width: 100%;
         padding: 0px;
