@@ -64,6 +64,8 @@
   .drop-menu.drop-menu--dropped {
     transform: translateY(0%);
     
-  }
+}
 
-
+.overflow--hidden {
+  overflow-y: hidden;
+}
